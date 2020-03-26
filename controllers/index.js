@@ -16,9 +16,9 @@ class CitiesController {
     return this.newCities.push(city);
   }
 
-  removeCityByCode(code) {
-    this.newCities = this.newCities.filter(c => c.codigo_ibge !== code);
-    return "Removido com sucesso";
+  removeCityByCode(city) {
+    this.newCities = this.newCities.filter(c => c.codigo_ibge !== city.codigo_ibge);
+    return `Cidade ${nome_municipio} foi removida!`;
   }
 
 };
